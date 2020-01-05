@@ -16,7 +16,7 @@ before_install:
   - gcloud config set project docker-k8s-fibonacci-complex
   - gcloud config set compute/zone us-west2-a
   - gcloud container clusters get-credentials docker-k8s-fibonacci-complex-cluster
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker build -t amiroous/docker-k8s-fibonacci-complex-client-test -f ./client/Dockerfile.dev ./client
 
 script:
