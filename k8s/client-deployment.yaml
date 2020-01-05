@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+
+metadata:
+  name: client-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      component: web
+  template:
+    metadata:
+      labels:
+        component: web
+    spec:
+      containers:
+        - name: client
+          image: amiroous/docker-k8s-fibonacci-client
+          ports:
+            - containerPort: 3000
