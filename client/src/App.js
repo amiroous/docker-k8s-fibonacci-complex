@@ -12,7 +12,7 @@ function App() {
             <div className="App">
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
-                    <h1>Fibonacci Calculator Using Docker and K8s</h1>
+                    <h1>Fibonacci Calculator Using Docker and K8s V.1</h1>
                     <div className="links">
                         <Link to="/" className="link">Home</Link>
                         <Link to="/otherpage" className="link">Other Page</Link>
