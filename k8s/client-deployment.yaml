@@ -16,5 +16,6 @@ spec:
       containers:
         - name: client
           image: amiroous/docker-k8s-fibonacci-complex-client
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000

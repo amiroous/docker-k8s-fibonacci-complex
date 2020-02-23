@@ -16,6 +16,7 @@ spec:
       containers:
         - name: worker
           image: amiroous/docker-k8s-fibonacci-complex-worker
+          imagePullPolicy: IfNotPresent
           env:
             - name: REDIS_HOST
               value: redis-cluster-ip-service
